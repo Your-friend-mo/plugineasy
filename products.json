@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "tag": "VIP",
+    "title": "Pokemon GO Spoofer",
+    "desc": "Installer for iOS/Android No Jailbreak",
+    "img": "img/pokemongonew.webp",
+    "slug": "pokemon-go-spoofer"
+  },
+  {
+    "id": 2,
+    "tag": "VIP",
+    "title": "KRNL Executor",
+    "desc": "Installer for iOS/Android No Jailbreak",
+    "img": "img/krnl.jpg",
+    "slug": "krnl-executor"
+  },
+  {
+    "id": 3,
+    "tag": "VIP",
+    "title": "PojavLauncher",
+    "desc": "Installer for iOS/Android",
+    "img": "img/pojav.png",
+    "slug": "pojavlauncher"
+  },
+  {
+    "id": 4,
+    "tag": "VIP",
+    "title": "MHNSpoofer",
+    "desc": "Monster Hunter Now Spoofer Installer for iOS/Android",
+    "img": "img/mhspoofer.jpg",
+    "slug": "mhnspoofer"
+  },
+  {
+    "id": 5,
+    "tag": "VIP",
+    "title": "TikTok Bypass",
+    "desc": "USA Bypass TikTok iOS & Android",
+    "img": "img/tiktok.webp",
+    "slug": "tiktok-bypass"
+  },
+  {
+    "id": 6,
+    "tag": "VIP",
+    "title": "TocaUnlocked",
+    "desc": "Free VIP iOS & Android",
+    "img": "img/tocaunlocked.webp",
+    "slug": "tocaunlocked"
+  },
+  {
+    "id": 7,
+    "tag": "VIPPlugin",
+    "title": "iRecovery",
+    "desc": "Recover Photos/Videos iOS/Android",
+    "img": "img/photos.webp",
+    "slug": "irecovery"
+  },
+  {
+    "id": 8,
+    "tag": "VIPPlugin",
+    "title": "Spotify Premium",
+    "desc": "iOS/Android",
+    "img": "img/spotify.webp",
+    "slug": "spotify-premium"
+  },
+  {
+    "id": 9,
+    "tag": "Plugin",
+    "title": "Delta Executor",
+    "desc": "iOS/Android",
+    "img": "img/delta-roblox.webp",
+    "slug": "delta-executor"
+  },
+  {
+    "id": 10,
+    "tag": "PluginFree",
+    "title": "Pokemon TCGP Tickets",
+    "desc": "Plugin iOS/Android",
+    "img": "img/pokemontcg.webp",
+    "slug": "pokemon-tcgp-tickets"
+  },
+  {
+    "id": 11,
+    "tag": "PluginFree",
+    "title": "Xbox Rewards 999,999",
+    "desc": "Plugin iOS/Android",
+    "img": "img/xbox.webp",
+    "slug": "xbox-rewards-999-999"
+  },
+  {
+    "id": 12,
+    "tag": "PluginFree",
+    "title": "iOS 17",
+    "desc": "iOS 17 Downgrader",
+    "img": "img/ios17.png",
+    "slug": "ios-17"
+  },
+  {
+    "id": 13,
+    "tag": "PluginFree",
+    "title": "Solara Executor",
+    "desc": "Plugin iOS/Android",
+    "img": "img/solara.jpg",
+    "slug": "solara-executor"
+  },
+  {
+    "id": 14,
+    "tag": "PluginFree",
+    "title": "Balatro",
+    "desc": "FREE iOS/Android",
+    "img": "img/balatro.webp",
+    "slug": "balatro"
+  },
+  {
+    "id": 15,
+    "tag": "PluginEasy",
+    "title": "AetherSX2",
+    "desc": "Emulator iOS/Android",
+    "img": "img/aethersx2.jpg",
+    "slug": "aethersx2"
+  },
+  {
+    "id": 16,
+    "tag": "VIPPlugin",
+    "title": "Car Parking Multiplayer 2",
+    "desc": "Unlimited Cash & Gold",
+    "img": "img/cpm2.webp",
+    "slug": "car-parking-multiplayer-2"
+  },
+  {
+    "id": 17,
+    "tag": "VIPPlugin",
+    "title": "Touchgrind X",
+    "desc": "Unlimited Cash & Gold",
+    "img": "img/touchgrindx.webp",
+    "slug": "touchgrind-x"
+  },
+  {
+    "id": 18,
+    "tag": "Plugin",
+    "title": "Squid Game Unleashed",
+    "desc": "Unlimited Cash iOS/Android",
+    "img": "img/squidgame.webp",
+    "slug": "squid-game-unleashed"
+  },
+  {
+    "id": 19,
+    "tag": "Plugin",
+    "title": "Archero 2",
+    "desc": "Unlimited Gems iOS/Android",
+    "img": "img/archero2.webp",
+    "slug": "archero-2"
+  },
+  {
+    "id": 20,
+    "tag": "VIPPlugin",
+    "title": "Subway Surfers",
+    "desc": "Unlimited Keys & Coins iOS/Android",
+    "img": "img/subwaysurfers3.webp",
+    "slug": "subway-surfers"
+  },
+  {
+    "id": 21,
+    "tag": "VIP",
+    "title": "Reelshort Coins",
+    "desc": "9999999 Coins iOS/Android",
+    "img": "img/reelshort.webp",
+    "slug": "reelshort-coins"
+  },
+  {
+    "id": 22,
+    "tag": "VIP",
+    "title": "8 Ball Pool",
+    "desc": "Guidelines iOS/Android",
+    "img": "img/8ballpool.webp",
+    "slug": "8-ball-pool"
+  },
+  {
+    "id": 23,
+    "tag": "VIP",
+    "title": "Royal Match",
+    "desc": "iOS/Android",
+    "img": "img/royalmatch.webp",
+    "slug": "royal-match"
+  },
+  {
+    "id": 24,
+    "tag": "VIP",
+    "title": "AppleWare",
+    "desc": "iOS/Android",
+    "img": "img/appleware.jpg",
+    "slug": "appleware"
+  },
+  {
+    "id": 25,
+    "tag": "VIP",
+    "title": "Block Blast Glitch",
+    "desc": "iOS/Android",
+    "img": "img/blockblast.webp",
+    "slug": "block-blast-glitch"
+  },
+  {
+    "id": 26,
+    "tag": "VIP",
+    "title": "Coin Master",
+    "desc": "Unlimited Spins iOS/Android",
+    "img": "img/coinmaster.webp",
+    "slug": "coin-master"
+  },
+  {
+    "id": 27,
+    "tag": "VIP",
+    "title": "GBox",
+    "desc": "iOS/Android Installer",
+    "img": "img/gbox1.png",
+    "slug": "gbox"
+  },
+  {
+    "id": 28,
+    "tag": "PluginEasy",
+    "title": "eFootball",
+    "desc": "Unlimited Gold/GP",
+    "img": "img/efootball25.webp",
+    "slug": "efootball"
+  },
+  {
+    "id": 29,
+    "tag": "PluginEasy",
+    "title": "Jenny MCPE",
+    "desc": "Easy Install iOS/Android",
+    "img": "img/jenny.webp",
+    "slug": "jenny-mcpe"
+  },
+  {
+    "id": 30,
+    "tag": "PluginEasy",
+    "title": "Avatar World",
+    "desc": "All Stories Unlocked iOS/Android",
+    "img": "img/avatarworld2.webp",
+    "slug": "avatar-world"
+  },
+  {
+    "id": 31,
+    "tag": "PluginEasy",
+    "title": "COD Mobile Menu Plugin",
+    "desc": "For Call of Duty Mobile iOS/Android",
+    "img": "img/codmobile.webp",
+    "slug": "cod-mobile-menu-plugin"
+  },
+  {
+    "id": 32,
+    "tag": "PluginEasy",
+    "title": "Roblox Menu Plugin",
+    "desc": "For iOS/Android",
+    "img": "img/roblox.webp",
+    "slug": "roblox-menu-plugin"
+  },
+  {
+    "id": 33,
+    "tag": "PluginEasy",
+    "title": "DRAGON BALL LEGENDS Plugin",
+    "desc": "iOS/Android",
+    "img": "img/dragonballlegends.webp",
+    "slug": "dragon-ball-legends-plugin"
+  },
+  {
+    "id": 34,
+    "tag": "PluginEasy",
+    "title": "OFF THE ROAD Plugin",
+    "desc": "iOS/Android",
+    "img": "img/offtheroad.webp",
+    "slug": "off-the-road-plugin"
+  },
+  {
+    "id": 35,
+    "tag": "PluginEasy",
+    "title": "Playlet Coins",
+    "desc": "iOS/Android",
+    "img": "img/playlet.webp",
+    "slug": "playlet-coins"
+  },
+  {
+    "id": 36,
+    "tag": "PluginEasy",
+    "title": "LiteTV Coins",
+    "desc": "iOS/Android",
+    "img": "img/litetv.webp",
+    "slug": "litetv-coins"
+  },
+  {
+    "id": 37,
+    "tag": "PluginEasy",
+    "title": "Dragon City Plugin",
+    "desc": "iOS/Android",
+    "img": "img/dragoncity.jpg",
+    "slug": "dragon-city-plugin"
+  },
+  {
+    "id": 38,
+    "tag": "PluginEasy",
+    "title": "Hunting Sniper Plugin",
+    "desc": "iOS/Android",
+    "img": "img/huntingsniper.jpg",
+    "slug": "hunting-sniper-plugin"
+  },
+  {
+    "id": 39,
+    "tag": "PluginEasy",
+    "title": "CarX Drift Racing 2",
+    "desc": "iOS/Android",
+    "img": "img/cxdr2.webp",
+    "slug": "carx-drift-racing-2"
+  },
+  {
+    "id": 40,
+    "tag": "PluginEasy",
+    "title": "Bowmasters Plugin",
+    "desc": "iOS/Android",
+    "img": "img/bowmasters.webp",
+    "slug": "bowmasters-plugin"
+  },
+  {
+    "id": 41,
+    "tag": "PluginEasy",
+    "title": "Roblox Voice Chat",
+    "desc": "iOS/Android",
+    "img": "img/robloxvoicechat.jpg",
+    "slug": "roblox-voice-chat"
+  },
+  {
+    "id": 42,
+    "tag": "PluginEasy",
+    "title": "My Superstore Simulator",
+    "desc": "FREE iOS/Android",
+    "img": "img/supermarketsuperstore.webp",
+    "slug": "my-superstore-simulator"
+  },
+  {
+    "id": 43,
+    "tag": "PluginEasy",
+    "title": "FC Mobile",
+    "desc": "Unlimited Points/Coins",
+    "img": "img/fcmobile25.webp",
+    "slug": "fc-mobile"
+  },
+  {
+    "id": 44,
+    "tag": "PluginEasy",
+    "title": "FC25 Plugin",
+    "desc": "50,000 Points + 1M Coins",
+    "img": "img/eafc25app.webp",
+    "slug": "fc25-plugin"
+  },
+  {
+    "id": 45,
+    "tag": "VIP",
+    "title": "Nat Fixer Plugin",
+    "desc": "Installer for iOS/Android",
+    "img": "img/natfixer.webp",
+    "slug": "nat-fixer-plugin"
+  },
+  {
+    "id": 46,
+    "tag": "VIP",
+    "title": "Aviator Predictor",
+    "desc": "Installer for iOS/Android",
+    "img": "img/avaitorpredictor.jpg",
+    "slug": "aviator-predictor"
+  },
+  {
+    "id": 47,
+    "tag": "VIP",
+    "title": "Sims FreePlay Plugin",
+    "desc": "Installer for iOS/Android",
+    "img": "img/simsfreeplay.webp",
+    "slug": "sims-freeplay-plugin"
+  },
+  {
+    "id": 48,
+    "tag": "VIP",
+    "title": "Monopoly Go Plugin",
+    "desc": "Unlimited Dice Rolls",
+    "img": "img/monopolygo.webp",
+    "slug": "monopoly-go-plugin"
+  },
+  {
+    "id": 49,
+    "tag": "VIP",
+    "title": "ShortMax Coins",
+    "desc": "999999 Coins for iOS/Android",
+    "img": "img/shortmax.webp",
+    "slug": "shortmax-coins"
+  },
+  {
+    "id": 50,
+    "tag": "VIP",
+    "title": "PocketFM Coins",
+    "desc": "999999 Coins for iOS/Android",
+    "img": "img/pocketfm.webp",
+    "slug": "pocketfm-coins"
+  },
+  {
+    "id": 51,
+    "tag": "VIP",
+    "title": "DreameShort Coins",
+    "desc": "999999 Coins for iOS/Android",
+    "img": "img/dreameshort.webp",
+    "slug": "dreameshort-coins"
+  },
+  {
+    "id": 52,
+    "tag": "VIP",
+    "title": "CarTube",
+    "desc": "iOS & Android Installer",
+    "img": "img/cartube.webp",
+    "slug": "cartube"
+  },
+  {
+    "id": 53,
+    "tag": "VIP",
+    "title": "Altstore",
+    "desc": "iOS & Android Installer",
+    "img": "img/altstore.webp",
+    "slug": "altstore"
+  },
+  {
+    "id": 54,
+    "tag": "VIP",
+    "title": "Incredibox Sprunki",
+    "desc": "iOS & Android Installer",
+    "img": "img/sprunki.jpg",
+    "slug": "incredibox-sprunki"
+  },
+  {
+    "id": 55,
+    "tag": "VIP",
+    "title": "AutoClick",
+    "desc": "iOS & Android Installer",
+    "img": "img/autoclicker.webp",
+    "slug": "autoclick"
+  },
+  {
+    "id": 56,
+    "tag": "VIP",
+    "title": "Madden Mobile 25",
+    "desc": "Free Madden Cash App",
+    "img": "img/madden25.webp",
+    "slug": "madden-mobile-25"
+  },
+  {
+    "id": 57,
+    "tag": "VIP",
+    "title": "Microsoft Rewards Adder",
+    "desc": "Adder Plugin iOS/Android",
+    "img": "img/microsoftrewards.webp",
+    "slug": "microsoft-rewards-adder"
+  },
+  {
+    "id": 58,
+    "tag": "VIP",
+    "title": "WebNovel",
+    "desc": "Coins Adder iOS/Android",
+    "img": "img/webnovel.webp",
+    "slug": "webnovel"
+  },
+  {
+    "id": 59,
+    "tag": "VIP",
+    "title": "DramaBox",
+    "desc": "Coins Plugin iOS/Android",
+    "img": "img/dramabox.webp",
+    "slug": "dramabox"
+  },
+  {
+    "id": 60,
+    "tag": "VIP",
+    "title": "PokeMMO",
+    "desc": "Easy Install iOS/Android",
+    "img": "img/pokemmo.webp",
+    "slug": "pokemmo"
+  }
+]
