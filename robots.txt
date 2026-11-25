@@ -28,4 +28,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://plugineasy.com/sitemap.xml
+Sitemap: https://plugineasy.comee.online/sitemap.xml
