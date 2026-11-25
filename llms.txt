@@ -4,10 +4,10 @@
 ## Main Entry Points
 - Homepage: https://plugineasy.comee.online/
 - Sitemap: https://plugineasy.comee.online/sitemap.xml
-- About PluginEasy: https://plugineasy.comee.online/about.html
-- Contact Support: https://plugineasy.comee.online/contact.html
-- Privacy Policy: https://plugineasy.comee.online/privacy.html
-- Terms of Service: https://plugineasy.comee.online/terms.html
+- About PluginEasy: https://plugineasy.comee.online/about
+- Contact Support: https://plugineasy.comee.online/contact
+- Privacy Policy: https://plugineasy.comee.online/privacy
+- Terms of Service: https://plugineasy.comee.online/terms
 - Total Indexed Plugins: 60
 
 ## Popular Verified Plugins
