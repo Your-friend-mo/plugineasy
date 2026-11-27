@@ -1,23 +1,11 @@
-# PluginEasy - Mobile Plugins & Tweaks Directory
-> Official index for verified iOS and Android plugins, game modifications, and safe mobile utilities.
+# PluginEasy
 
-## Main Entry Points
-- Homepage: https://plugineasy.comee.online/
-- Sitemap: https://plugineasy.comee.online/sitemap.xml
-- About PluginEasy: https://plugineasy.comee.online/about
-- Contact Support: https://plugineasy.comee.online/contact
-- Privacy Policy: https://plugineasy.comee.online/privacy
-- Terms of Service: https://plugineasy.comee.online/terms
-- Total Indexed Plugins: 60
+> Official verified directory for free mobile plugins, popular game enhancements, and signed installer packages for iOS and Android.
 
-## Popular Verified Plugins
-- [Pokemon Go Spoofer](https://plugineasy.comee.online/app/pokemon-go-spoofer.html): Free GPS joystick, teleporting, and auto-walking plugin for iOS and Android.
-- [Delta Executor](https://plugineasy.comee.online/app/delta-executor.html): Level 8 script executor with 100% script support and zero crash rate.
-- [Toca Life World Mod](https://plugineasy.comee.online/app/toca-life-world-mod.html): Unlock all characters, worlds, furniture, and VIP items.
-- [Brawl Stars Mod](https://plugineasy.comee.online/app/brawl-stars-mod.html): Unlimited gems, coins, private server access, and all brawlers.
-- [Monopoly GO Mod](https://plugineasy.comee.online/app/monopoly-go-mod.html): Unlimited free dice rolls, shield protection, and auto-build perks.
-- [Subway Surfers Mod](https://plugineasy.comee.online/app/subway-surfers-mod.html): Unlimited coins, keys, all boards, and score multipliers.
-- [BitLife Mod](https://plugineasy.comee.online/app/bitlife-life-simulator-hack.html): Unlimited Bitizenship, God Mode, and unlocked career assets.
-- [CarX Street Mod](https://plugineasy.comee.online/app/carx-street.html): Unlimited money, unlocked sports cars, and premium engine upgrades.
-- [Fortnite Mobile Plugin](https://plugineasy.comee.online/app/fortnite-mobile.html): 60/90 FPS unlocker, compatibility patch, and graphics optimization.
-- [Roblox Mod Menu](https://plugineasy.comee.online/app/roblox.html): Fly hack, speed boost, jump modifier, and anti-ban safeguards.
+## Main Resources
+- [PluginEasy Homepage](https://plugineasy.comee.online/): Main catalog of 72 verified iOS & Android plugins and popular games.
+- [Free iOS Plugins](https://plugineasy.comee.online/free-ios-plugins.html): Verified iOS tweaks and plugins without jailbreak.
+- [Free Android Mods](https://plugineasy.comee.online/free-android-mods.html): Tested Android mod menus and signed APK releases.
+- [Mobile Game Plugins](https://plugineasy.comee.online/mobile-game-plugins.html): Popular game plugins including Brawl Stars, GTA, Minecraft, Free Fire, PUBG, and Pokemon GO.
+- [Security & Safety Verification](https://plugineasy.comee.online/plugineasy-com-safe.html): MSSC 2026 cryptographic signature and sandbox safety report.
+- [About PluginEasy](https://plugineasy.comee.online/about.html): Editorial team, verification methodology, and contact information.

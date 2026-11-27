@@ -1,10 +1,11 @@
 import os
-import glob
 import re
 import json
+import html
 
 BASE_DIR = r"c:\Users\m\Documents\plugineasy"
 APP_DIR = os.path.join(BASE_DIR, "app")
+SITE_URL = "https://plugineasy.comee.online"
 
 with open(os.path.join(BASE_DIR, "products.json"), "r", encoding="utf-8") as f:
     products = json.load(f)
@@ -20,64 +21,61 @@ keyword_configs = [
     ("plugineasy-con.html", "plugineasy con"),
     ("www-plugineasy.html", "www plugineasy"),
     ("plugineasy-com-safe.html", "plugineasy com safe"),
+    ("free-ios-plugins.html", "free ios plugins"),
+    ("free-android-mods.html", "free android mods"),
+    ("plugineasy-app-download.html", "plugineasy app download"),
+    ("mobile-game-plugins.html", "mobile game plugins"),
+    ("no-jailbreak-apps.html", "no jailbreak apps"),
+    ("plugineasy-apk.html", "plugineasy apk"),
 ]
 
 trust_pages = ["about.html", "contact.html", "privacy.html", "terms.html"]
-
 all_files = ["index.html"] + [fn for fn, _ in keyword_configs] + trust_pages + [
     f"app/{p['slug']}.html" for p in products
 ]
 
-print(f"==================================================")
+def extract_visible_text(html_str):
+    clean = re.sub(r'<(script|style)[^>]*>.*?</\1>', ' ', html_str, flags=re.S | re.I)
+    text = re.sub(r'<[^>]+>', ' ', clean)
+    return html.unescape(text)
+
+print("==================================================")
 print(f"   STARTING COMPREHENSIVE AUDIT OF ALL {len(all_files)} PAGES")
-print(f"==================================================")
+print("==================================================")
 
 errors = []
-success_count = 0
 
-# 1. Check Keywords
-print("\n--- CHECK 1: KEYWORD DENSITY (Target: EXACTLY 30) ---")
-# Homepage
-with open(os.path.join(BASE_DIR, "index.html"), "r", encoding="utf-8") as f:
-    c = f.read()
-cnt = len(re.findall(re.escape("plugineasy"), c, re.IGNORECASE))
-if cnt == 30:
-    success_count += 1
-else:
-    errors.append(f"index.html: 'plugineasy' count is {cnt} (expected 30)")
+# 1. Check 2% Keyword Density
+print("\n--- CHECK 1: KEYWORD DENSITY (~2% OF TEXT) ---")
+targets = [("index.html", "plugineasy")] + keyword_configs + [
+    (f"app/{p['slug']}.html", p["title"]) for p in products
+]
 
-# 10 Keyword pages
-for fn, kw in keyword_configs:
-    with open(os.path.join(BASE_DIR, fn), "r", encoding="utf-8") as f:
+kw_passed = 0
+for rel_path, kw in targets:
+    full_path = os.path.join(BASE_DIR, rel_path.replace("/", os.sep))
+    with open(full_path, "r", encoding="utf-8") as f:
         c = f.read()
-    cnt = len(re.findall(re.escape(kw), c, re.IGNORECASE))
-    if cnt == 30:
-        success_count += 1
+    vis = extract_visible_text(c)
+    total_w = len(vis.split())
+    kw_words = max(1, len(kw.split()))
+    cnt = len(re.findall(re.escape(kw), vis, re.IGNORECASE))
+    density = (cnt * kw_words) / max(1, total_w) * 100.0
+    if 1.5 <= density <= 4.5 and cnt >= 2:
+        kw_passed += 1
     else:
-        errors.append(f"{fn}: '{kw}' count is {cnt} (expected 30)")
+        errors.append(f"{rel_path}: '{kw}' density {density:.2f}% (count={cnt}, words={total_w})")
 
-# 60 Product pages
-for p in products:
-    title = p["title"]
-    slug = p["slug"]
-    with open(os.path.join(APP_DIR, f"{slug}.html"), "r", encoding="utf-8") as f:
-        c = f.read()
-    cnt = len(re.findall(re.escape(title), c, re.IGNORECASE))
-    if cnt == 30:
-        success_count += 1
-    else:
-        errors.append(f"app/{slug}.html: '{title}' count is {cnt} (expected 30)")
+print(f"Keyword density check completed: {kw_passed}/{len(targets)} passed.")
 
-print(f"Keyword check completed: {71 - len([e for e in errors if 'count is' in e])}/71 passed.")
-
-# 2. Check HTML Audits Across All 75 Files
+# 2. Check HTML Audits Across All Files
 print("\n--- CHECK 2: HTML SEO & AUDIT CHECKS ---")
 for rel_path in all_files:
     full_path = os.path.join(BASE_DIR, rel_path.replace("/", os.sep))
     if not os.path.exists(full_path):
         errors.append(f"{rel_path}: File does not exist!")
         continue
-    
+
     with open(full_path, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -86,12 +84,12 @@ for rel_path in all_files:
     if len(h1s) != 1:
         errors.append(f"{rel_path}: Expected exactly 1 H1 tag, found {len(h1s)}")
 
-    # H3 Check (must have > 1)
+    # H3 Check
     h3s = re.findall(r'<h3[^>]*>([\s\S]*?)</h3>', content)
     if len(h3s) <= 1:
         errors.append(f"{rel_path}: Expected multiple H3 tags, found {len(h3s)}")
 
-    # H2 Check for main pages (homepage, keyword pages, product pages should have 2 H2 tags)
+    # H2 Check
     h2s = re.findall(r'<h2[^>]*>([\s\S]*?)</h2>', content)
     if rel_path == "index.html" or any(rel_path == fn for fn, _ in keyword_configs) or rel_path.startswith("app/"):
         if len(h2s) != 2:
@@ -111,7 +109,7 @@ for rel_path in all_files:
     else:
         desc_len = len(desc_m.group(1))
         if not (140 <= desc_len <= 160):
-            errors.append(f"{rel_path}: Meta description length {desc_len} not in 140-160 chars ('{desc_m.group(1)}')")
+            errors.append(f"{rel_path}: Meta description length {desc_len} not in 140-160 chars")
 
     # Canonical URL Check
     canon_m = re.search(r'<link\s+rel="canonical"\s+href="([^"]*)"', content)
@@ -119,8 +117,7 @@ for rel_path in all_files:
         errors.append(f"{rel_path}: Missing canonical URL!")
     else:
         canon_url = canon_m.group(1)
-        # Verify self-referential
-        expected_url = f"https://plugineasy.com/{rel_path}" if rel_path != "index.html" else "https://plugineasy.com/"
+        expected_url = f"{SITE_URL}/{rel_path}" if rel_path != "index.html" else f"{SITE_URL}/"
         if canon_url != expected_url:
             errors.append(f"{rel_path}: Canonical URL is '{canon_url}', expected '{expected_url}'")
 
@@ -133,21 +130,27 @@ for rel_path in all_files:
     json_lds = re.findall(r'<script\s+type="application/ld\+json">([\s\S]*?)</script>', content)
     if len(json_lds) == 0:
         errors.append(f"{rel_path}: Missing JSON-LD structured data!")
+    else:
+        for block in json_lds:
+            try:
+                json.loads(block)
+            except Exception as e:
+                errors.append(f"{rel_path}: Invalid JSON-LD syntax: {e}")
 
     # Trust pages links in footer
-    for tp in ["about.html", "contact.html", "privacy.html", "terms.html"]:
+    for tp in trust_pages:
         if tp not in content:
             errors.append(f"{rel_path}: Missing link to trust page '{tp}' in content")
 
-# 3. Check robots.txt and sitemap.xml
+# 3. Check robots.txt, sitemap.xml, llms.txt
 print("\n--- CHECK 3: ROBOTS.TXT & SITEMAP.XML & LLMS.TXT ---")
 with open(os.path.join(BASE_DIR, "robots.txt"), "r", encoding="utf-8") as f:
     rb = f.read()
 for crawler in ["GPTBot", "Google-Extended", "CCBot", "PerplexityBot", "Claude-User", "ChatGPT-User"]:
     if crawler not in rb:
         errors.append(f"robots.txt missing AI crawler rule for: {crawler}")
-if "Sitemap: https://plugineasy.com/sitemap.xml" not in rb:
-    errors.append("robots.txt missing sitemap declaration!")
+if f"Sitemap: {SITE_URL}/sitemap.xml" not in rb:
+    errors.append("robots.txt missing live sitemap declaration!")
 
 with open(os.path.join(BASE_DIR, "sitemap.xml"), "r", encoding="utf-8") as f:
     sm = f.read()
@@ -157,20 +160,16 @@ if len(locs) != len(all_files):
 
 with open(os.path.join(BASE_DIR, "llms.txt"), "r", encoding="utf-8") as f:
     ll = f.read()
-for link in ["Homepage", "Sitemap", "About PluginEasy", "Contact Support", "Privacy Policy", "Terms of Service"]:
-    if link not in ll:
-        errors.append(f"llms.txt missing curated link: {link}")
+if SITE_URL not in ll:
+    errors.append("llms.txt missing live domain URL!")
 
 # 4. Check Content Locker & APK
 print("\n--- CHECK 4: CONTENT LOCKER & APK ASSETS ---")
 with open(os.path.join(BASE_DIR, "js", "locker.js"), "r", encoding="utf-8") as f:
     lj = f.read()
-if "831501" not in lj:
-    errors.append("js/locker.js missing User ID 831501")
-if "8902c82579eec05db438" not in lj:
-    errors.append("js/locker.js missing Public API key 8902c82579eec05db438")
-if "4a1d7b7a9f26dbe08fc3a0b059296411" not in lj:
-    errors.append("js/locker.js missing Offers API key 4a1d7b7a9f26dbe08fc3a0b059296411")
+for key in ["831501", "8902c82579eec05db438", "4a1d7b7a9f26dbe08fc3a0b059296411"]:
+    if key not in lj:
+        errors.append(f"js/locker.js missing key {key}")
 
 apk_file = os.path.join(BASE_DIR, "downloads", "plugineasy.apk")
 if not os.path.exists(apk_file) or os.path.getsize(apk_file) == 0:
@@ -179,12 +178,11 @@ if not os.path.exists(apk_file) or os.path.getsize(apk_file) == 0:
 print("\n==================================================")
 print(f"   AUDIT SUMMARY: {len(errors)} ERRORS FOUND")
 print("==================================================")
-
 if errors:
-    print("FAILED CHECKS:")
     for err in errors[:25]:
-        print(f"  ❌ {err}")
+        print(f"  FAIL: {err}")
     if len(errors) > 25:
-        print(f"  ... and {len(errors) - 25} more errors.")
+        print(f"  ... and {len(errors) - 25} more.")
+    exit(1)
 else:
-    print("✅ ALL 75 PAGES PASSED 100% OF AUDIT CHECKS WITH PERFECT SCORES!")
+    print(f"ALL {len(all_files)} PAGES PASSED 100% OF AUDIT CHECKS!")

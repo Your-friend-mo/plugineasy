@@ -478,5 +478,101 @@
     "desc": "Easy Install iOS/Android",
     "img": "img/pokemmo.webp",
     "slug": "pokemmo"
+  },
+  {
+    "id": 61,
+    "tag": "VIP",
+    "title": "Brawl Stars Mod",
+    "desc": "Unlimited Gems & All Brawlers Unlocked iOS/Android",
+    "img": "img/brawlstars.webp",
+    "slug": "brawl-stars-mod"
+  },
+  {
+    "id": 62,
+    "tag": "VIP",
+    "title": "GTA San Andreas Mobile",
+    "desc": "Full Unlocked Edition & Cleo Mod Menu iOS/Android",
+    "img": "img/gtasanandreas.webp",
+    "slug": "gta-san-andreas-mobile"
+  },
+  {
+    "id": 63,
+    "tag": "VIP",
+    "title": "Minecraft PE Unlocked",
+    "desc": "Free Full Version & Skins Unlocked iOS/Android",
+    "img": "img/minecraftpe.webp",
+    "slug": "minecraft-pe-unlocked"
+  },
+  {
+    "id": 64,
+    "tag": "VIP",
+    "title": "Free Fire Max Plugin",
+    "desc": "Diamonds & Headshot Sensitivity Tool iOS/Android",
+    "img": "img/freefiremax.webp",
+    "slug": "free-fire-max-plugin"
+  },
+  {
+    "id": 65,
+    "tag": "VIP",
+    "title": "PUBG Mobile Plugin",
+    "desc": "UC Generator & 120 FPS Booster iOS/Android",
+    "img": "img/pubgmobile.webp",
+    "slug": "pubg-mobile-plugin"
+  },
+  {
+    "id": 66,
+    "tag": "PluginFree",
+    "title": "Clash Royale Mod",
+    "desc": "Unlimited Gems & Max Level Cards iOS/Android",
+    "img": "img/clashroyale.webp",
+    "slug": "clash-royale-mod"
+  },
+  {
+    "id": 67,
+    "tag": "PluginFree",
+    "title": "Stumble Guys Unlocked",
+    "desc": "All Skins, Emotes & Gems Unlocked iOS/Android",
+    "img": "img/stumbleguys.webp",
+    "slug": "stumble-guys-unlocked"
+  },
+  {
+    "id": 68,
+    "tag": "PluginFree",
+    "title": "Clash of Clans Plugin",
+    "desc": "Private Server & Unlimited Resources iOS/Android",
+    "img": "img/clashofclans.webp",
+    "slug": "clash-of-clans-plugin"
+  },
+  {
+    "id": 69,
+    "tag": "VIPPlugin",
+    "title": "Genshin Impact Plugin",
+    "desc": "Primogems & FPS Unlocker iOS/Android",
+    "img": "img/genshinimpact.webp",
+    "slug": "genshin-impact-plugin"
+  },
+  {
+    "id": 70,
+    "tag": "PluginFree",
+    "title": "Mobile Legends Plugin",
+    "desc": "All Skins Unlocked & Map Enhancer iOS/Android",
+    "img": "img/mobilelegends.webp",
+    "slug": "mobile-legends-plugin"
+  },
+  {
+    "id": 71,
+    "tag": "PluginFree",
+    "title": "Geometry Dash Unlocked",
+    "desc": "Full Version & All Icons Unlocked iOS/Android",
+    "img": "img/geometrydash.webp",
+    "slug": "geometry-dash-unlocked"
+  },
+  {
+    "id": 72,
+    "tag": "PluginFree",
+    "title": "Among Us Mod Menu",
+    "desc": "All Hats, Pets & Impostor Menu iOS/Android",
+    "img": "img/amongus.webp",
+    "slug": "among-us-mod-menu"
   }
 ]
